@@ -1,0 +1,47 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "files": true,
+    "compilerOptions": {
+      "paths": {
+        "@/common": ["./src/common"],
+        "@/core": ["./src/main/core"],
+        "@/components": ["./src/renderer/components"],
+        "@/pages/*": ["./src/renderer/pages/*"],
+        "@/components/*": ["./src/renderer/components/*"],
+        "@/store": ["./src/renderer/store"],
+        "@/preload": ["./src/preload"],
+        "@/reducer/*": ["./src/renderer/reducer/*"]
+      }
+    }
+  },
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "lib": ["dom", "es2021"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": ".erb/dll",
+    "paths": {
+      "@/core": ["./src/main/core/index.ts"],
+      "@/common": ["./src/common/index.ts"],
+      "@/reducer/*": ["./src/renderer/reducer/*"],
+      "@/components": ["./src/renderer/components"],
+      "@/components/*": ["./src/renderer/components/*"],
+      "@/pages/*": ["./src/renderer/pages/*"],
+      "@/store": ["./src/renderer/store/index.ts"],
+      "@/preload": ["./src/preload"]
+    }
+  },
+  "exclude": ["test", "release/build", "release/app/dist", ".erb/dll"]
+}

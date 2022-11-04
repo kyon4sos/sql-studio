@@ -1,0 +1,43 @@
+directories:
+  output: release/build
+  buildResources: assets
+  app: release/app
+productName: SQL Lab
+appId: neko.studio
+asar: true
+asarUnpack: '**\*.{node,dll}'
+files:
+  - filter:
+      - dist
+      - node_modules
+      - package.json
+afterSign: .erb/scripts/notarize.js
+mac:
+  target:
+    target: default
+    arch:
+      - arm64
+  type: distribution
+  hardenedRuntime: true
+  entitlements: assets/entitlements.mac.plist
+  entitlementsInherit: assets/entitlements.mac.plist
+  gatekeeperAssess: false
+dmg:
+  contents:
+    - x: 130
+      'y': 220
+    - x: 410
+      'y': 220
+      type: link
+      path: /Applications
+win:
+  target:
+    - nsis
+linux:
+  target:
+    - AppImage
+  category: Development
+extraResources:
+  - filter:
+      - ./assets/**
+electronVersion: 20.0.2

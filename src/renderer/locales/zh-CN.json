@@ -1,0 +1,37 @@
+{
+  "connection": {
+    "newConn": "新建链接",
+    "content": "我是首页",
+    "type": "类型",
+    "port": "端口",
+    "host": "host",
+    "user": "用户名",
+    "password": "密码",
+    "database": "数据库",
+    "connectionName": "连接名",
+    "enterName": "请输入连接名",
+    "enterUserName": "请输入用户名",
+    "enterPort": "请输入端口",
+    "requiredHost": "host是必填项",
+    "requiredPort": "端口是必填项",
+    "requiredPas": "密码是必填项",
+    "savePas": "保存密码",
+    "enterPas": "请输入密码",
+    "requiredUsername": "用户名是必填项",
+    "requiredDb": "数据库是必填项",
+    "enterDb": "请输入数据库名称",
+    "hostOrIP": "请输入主机名称或者ip地址",
+    "selectConn": "请选择数据源",
+    "selectDb": "请选择数据库",
+    "castTime": "运行时间",
+    "total": "总共",
+    "row": "行",
+    "second": "秒",
+    "viewTable": "设计表结构",
+    "viewDate": "查看数据"
+  },
+  "setting": {
+    "title": "设置",
+    "language": "语言"
+  }
+}

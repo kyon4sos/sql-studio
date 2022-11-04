@@ -1,0 +1,37 @@
+{
+  "connection": {
+    "newConn": "New Connection",
+    "content": "内容",
+    "type": "Type",
+    "port": "Port",
+    "host": "Host",
+    "user": "User",
+    "password": "Password",
+    "database": "Database",
+    "connectionName": "Connection Name",
+    "enterName": "enter Name",
+    "enterUserName": "Enter User Name",
+    "enterPort": "Enter Port",
+    "requiredHost": "Required Host",
+    "requiredPort": "Required Port",
+    "requiredPas": "Required Password",
+    "savePas": "save password",
+    "enterPas": "Enter password",
+    "requiredUsername": "Required Username",
+    "requiredDb": "Required Database",
+    "enterDb": "Enter Database",
+    "hostOrIP": "Enter host or IP",
+    "selectConn": "Select Connection",
+    "selectDb": "Select Database",
+    "castTime": "Cast Time",
+    "total": "Total",
+    "row": "Record",
+    "second": "s",
+    "viewTable": "Design Table",
+    "viewDate": "View Date"
+  },
+  "setting": {
+    "title": "Setting",
+    "language": "language"
+  }
+}
